@@ -1,0 +1,41 @@
+{
+  "name": "genpark-llm-guided-tree-of-thought-monte-carlo-search-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - LLM-guided Tree-of-Thought (ToT) Monte Carlo search engine exploring branched reasoning trajectories and automated state evaluation.",
+  "author": "genpark",
+  "category": "agent-reasoning",
+  "tags": [
+    "tree-of-thought",
+    "mcts",
+    "reasoning-search",
+    "trajectory-planning",
+    "heuristic-eval"
+  ],
+  "inputs": {
+    "problem_statement": {
+      "type": "string"
+    },
+    "beam_width": {
+      "type": "integer"
+    },
+    "rollout_depth_budget": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "search_session_id": {
+      "type": "string"
+    },
+    "nodes_explored_count": {
+      "type": "integer"
+    },
+    "solution_verdict_verified": {
+      "type": "boolean"
+    },
+    "thought_tree_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
